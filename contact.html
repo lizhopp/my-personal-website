@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Me</title>
-</head>
-<body>
-    Contact Me Here
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo-container">
+        <img src="img/bunny.webp" alt="rabbit-logo" />
+        <h1 class="log-text">Liz Hoppstetter</h1>
+      </div>
+      <div>
+        <a class="link" href="index.html">Home</a>
+        <a class="link" href="about.html">About</a>
+        <a class="link" href="portfolio.html">Portfolio</a>
+        <a class="link" id="current" href="contact.html">Contact</a>
+      </div>
+    </nav>
+    <main>
+      <h2>Contact Me Here</h2>
+      <form action="mailto:eahoppstetter@gmail.com" method="post" enctype="text/plain">
+        <h3>Name:</h3>
+        <input type="text" name="name" id="_name" />
+        <h3>Email:</h3>
+        <input type="email" name="email" id="_email" />
+        <h3>Message:</h3>
+        <textarea name="message" id="_message" rows="4" cols="50">
+Type your message here.</textarea
+        >
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <a
+        href="https://www.linkedin.com/in/elizabeth-hoppstetter-aa3a3159/"
+        target="_blank"
+      >
+        <img src="/img/linkedInLogo.png" alt="my-linked-in" />
+      </a>
+    </footer>
+  </body>
 </html>
